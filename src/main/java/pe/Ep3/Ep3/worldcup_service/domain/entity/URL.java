@@ -9,7 +9,7 @@ import lombok.*;
 @Getter
 @Setter
 public class URL {
-    private String country ;
+    private String countries ;
     private String  players ;
     private String stadiums ;
 
