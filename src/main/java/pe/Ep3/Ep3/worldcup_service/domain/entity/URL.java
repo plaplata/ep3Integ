@@ -11,6 +11,6 @@ import lombok.*;
 public class URL {
     private String country ;
     private String  players ;
-    private String stadium ;
+    private String stadiums ;
 
 }
