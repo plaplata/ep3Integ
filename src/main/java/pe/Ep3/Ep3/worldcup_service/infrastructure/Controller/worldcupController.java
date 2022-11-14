@@ -35,7 +35,7 @@ public class worldcupController {
         return worldcupService.getPlayers();
     }
     @GetMapping
-    @RequestMapping("/worldcup/stadium")
+    @RequestMapping("/worldcup/stadiums")
     public List<Stadium> getStadium()
     {
         return worldcupService.getStadium();

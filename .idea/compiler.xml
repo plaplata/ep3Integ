@@ -10,6 +10,7 @@
         <module name="EP3" />
         <module name="clonAlexis" />
         <module name="parcial" />
+        <module name="repoep3Integ" />
       </profile>
     </annotationProcessing>
   </component>
@@ -18,6 +19,7 @@
       <module name="EP3" options="-parameters" />
       <module name="clonAlexis" options="-parameters" />
       <module name="parcial" options="-parameters" />
+      <module name="repoep3Integ" options="-parameters" />
     </option>
   </component>
 </project>
