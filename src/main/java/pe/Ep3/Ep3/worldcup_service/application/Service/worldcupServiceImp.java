@@ -27,24 +27,6 @@ public class worldcupServiceImp implements worldcupService {
 
 
 
-   /* @Override
-    public BasicResponse registrarCliente(playerRequest clientRequest , int ApiKey) {
-        try {
-            worldcup client=new worldcup();
-            client.setApiKey(1234);
-
-            if (ApiKey!= client.getApiKey()){
-                return BasicResponse.whenError("apikey incorrecto");
-            }else {
-                clientRepository.save(this.buildClienteFromRequest(clientRequest));
-                return BasicResponse.whenSuccess();
-            }
-        }catch (Exception ex)
-        {
-            return BasicResponse.whenError(ex.getMessage());
-        }
-    }*/
-
     @Override
     public List<Country> getCountries() {
         List<Country>myListCountries=countryCupRepository.findAll();
@@ -65,7 +47,7 @@ public class worldcupServiceImp implements worldcupService {
 
     @Override
     public URL getURL() {
-        URL URL=new URL("https://api/v1/worldcup/countries","https://api/v1/worldcup/players", "https://api/v1/mundial/stadiums");
+        URL URL=new URL("https://api-wc-ep3.herokuapp.com/api/v1/worldcup/countries","https://api-wc-ep3.herokuapp.com/api/v1/worldcup/players", "https://api-wc-ep3.herokuapp.com/api/v1/worldcup/stadiums");
         return URL;
     }
 
@@ -73,9 +55,5 @@ public class worldcupServiceImp implements worldcupService {
     public BasicResponse registerPlayer(playerRequest playerRequest) {
         return null;
     }
-    // public worldcup buildClienteFromRequest(playerRequest request){
-     //   return worldcup.builder().nrodocumento(request.getNrodocumento()).Nombre(request.getNombre())
-       //         .Apellido(request.getApellido()).Distrito(request.getDistrito()).correo(request.getCorreo()).nroCelular(request.getNroCelular())
-         //       .Direccion(request.getDireccion()).estado(1).build();
-    //}
+
 }
